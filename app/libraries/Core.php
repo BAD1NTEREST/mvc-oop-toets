@@ -19,7 +19,7 @@ class Core
             unset($url[0]);
        }
 
-       // Laad het bestand waar de controller in zit voor he maken van een object van die klasse
+       // Laad het bestand waar de controller in zit voor maken van een object van die klasse
        require_once '../app/controllers/' . $this->currentController . '.php';
 
        $this->currentController = new $this->currentController();
